@@ -7,8 +7,6 @@ import logging
 import mpd
 
 
-HOST = "kenshi-desktop"
-
 class SensorBuffer:
     def __init__(self,buf_size):
         self.buf_size = buf_size
