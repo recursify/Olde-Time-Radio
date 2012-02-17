@@ -136,7 +136,7 @@ class JukeBox:
     def set_playlists(self):
         playlists = self.get_playlists()
         if len(playlists) < 1:
-            raise "Error: No playlists exist currently.  Please add some and try again"
+            raise RuntimeError("Error: No playlists exist currently.  Please add some and try again")
         self.playlists = playlists
 
     def get_playlists(self):
